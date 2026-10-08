@@ -1,0 +1,99 @@
+body{
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.app{
+    width: 400px;
+    height: 550px;
+    background-color: #cfc8c8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+input{
+    width: 90%;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input:focus{
+    outline: none;
+    border-color: #30b309;
+    box-shadow: 0 0 5px #176101;
+}
+.ajout{
+    width: 100px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 19px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid #ccc;
+    background: transparent;
+    animation: popop 1.9s ease-in-out;
+
+}
+.ajout:hover{
+    background-color: #30b309;
+    
+   
+}
+ul{
+    padding: 0;
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style-type: square;
+    list-style: square;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    gap: 10px;
+}
+.actions{
+    display: flex;
+    gap: 5px;
+}
+.actions button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 19px;
+}
+.toggle{
+    background-color: #30b309;
+    color: white;
+}
+.delete{
+    background-color: #ff4d4d;
+    color: white;
+}
+@keyframes popop {
+    0%{
+        width: 5px; 
+        font-size: 0px;
+
+    }
+    50%{
+        width: 120px;
+        font-size: 22px;
+    }
+    100%{
+        width: 100px;
+        font-size: 17px;
+
+    }
+}
